@@ -1,0 +1,34 @@
+
+-------------------------------------------------------------------------------
+
+2011-07-11 - Changed Project name from FileUtils to MattWepplerCommonUtils.
++++ADDED CLASS+++
+DatabaseUtils.java
+
++++ADDED CLASS+++
+GuiPrompt.java
+
++++ADDED METHODS+++
+genericStringPrompt:
+ Prompts the user to enter a string. The string is a general purpose string.
+openFileDialog:
+ Move the openFileDialog out of FileUtils and into GuiPrompt.
+passwordPrompt:
+ Prompts the user to enter a password, the password is masked.
+
+-------------------------------------------------------------------------------
+
+2011-06-27 - Added some new methods.
+
++++ADDED METHODS+++
+getFileListing:
+ //...
+getFileListingNoSort: 
+ //...
+readCsvToKeyValuePairs: Given a File Object (Comma Separated Value file), and a
+ boolean value (swap keys & values or not), creates a HashMap<String,String>.
+ CSV file should only contain 2 columns. If boolean is true keys,values becomes
+ values,keys.
+validateDirectory: Given a File Object, tests if it is actually a Directory. 
+ 
+-------------------------------------------------------------------------------
